@@ -1,0 +1,14 @@
+<div class="todo-container">
+    <form class="input-section"[formGroup]="loginForm" (ngSubmit)="login()" >
+      <h1>Todo App</h1>
+    
+         <input type="text" name="uid" placeholder="Userid" formControlName="uid"><br><br>
+         <input type="password" name="pswd" placeholder="Password" formControlName="pswd"><br><br>
+        <button class="addto" type="submit">Login</button><br><br>
+        <a href="#" id="ok">Forgotten password?</a><br>
+
+        <div class="moon"></div><br>
+        <button class="addto" (click)="register()">Create New Account</button><br><br>
+        
+    </form>
+
