@@ -1,0 +1,16 @@
+<div class="todo-container">
+    <form class="input-section" >
+      <h1>Todo App</h1>
+    
+         <input type="text" [(ngModel)]="newAct" name="task" placeholder="new task"><br><br>
+         <button class="addto" (click)="addTask()">Add</button>
+       
+        
+    </form>
+   <ul *ngFor="let x of items; let index = index;">
+     <li>{{x}}<i class="fas fa-trash-alt" (click)="deleteTask(index)"></i></li>
+    
+   </ul> 
+   
+  
+  </div>
